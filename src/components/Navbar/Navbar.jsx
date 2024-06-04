@@ -5,9 +5,9 @@ export default function Navbar() {
   return (
     <>
       <section id="header">
-        <Link to="/home">
+        <NavLink to="/">
           <img className="logo" src="/img/logo.png" alt="Logo" />
-        </Link>
+        </NavLink>
         <div>
           <ul id="navbar">
             <li>
@@ -27,10 +27,20 @@ export default function Navbar() {
               </NavLink>
             </li>
             <li>
-              <NavLink to="/blog">Blog</NavLink>
+              <NavLink
+                to="/blog"
+                className={({ isActive }) => (isActive ? "active" : "")}
+              >
+                Blog
+              </NavLink>
             </li>
             <li>
-              <NavLink to="/about">About</NavLink>
+              <NavLink
+                to="/about"
+                className={({ isActive }) => (isActive ? "active" : "")}
+              >
+                About
+              </NavLink>
             </li>
             <li>
               <NavLink to="/contact">Contact</NavLink>

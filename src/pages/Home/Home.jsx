@@ -1,86 +1,58 @@
+import FeaturedProduct from "../../components/FeaturedProduct";
+import NewsLetter from "../../components/NewsLetter";
+import Services from "../../components/Services";
 import "./Home.css";
-const shoppingServices = [
-  {
-    id: 1,
-    name: "Free Shipping",
-    image: "img/features/f1.png",
-  },
-  {
-    id: 2,
-    name: "Online Order",
-    image: "img/features/f2.png",
-  },
-  {
-    id: 3,
-    name: "Save Money",
-    image: "img/features/f3.png",
-  },
-  {
-    id: 4,
-    name: "Promotions",
-    image: "img/features/f4.png",
-  },
-  {
-    id: 5,
-    name: "Happy Sell",
-    image: "img/features/f5.png",
-  },
-  {
-    id: 6,
-    name: "24/7 Support",
-    image: "img/features/f6.png",
-  },
-];
-const featuredProductsList = [
-  {
-    image: "img/products/f1.jpg",
-    brandName: "adidas",
-    title: "Cartoon Astronaut T-Shirt",
-    price: 78,
-  },
-  {
-    image: "img/products/f2.jpg",
-    brandName: "US Polo",
-    title: "Checked Shirt",
-    price: 31,
-  },
-  {
-    image: "img/products/f3.jpg",
-    brandName: "Gucci",
-    title: "Polo T-Shirts",
-    price: 20,
-  },
-  {
-    image: "img/products/f4.jpg",
-    brandName: "H&M",
-    title: "Cartoon T-Shirts",
-    price: 33,
-  },
-  {
-    image: "img/products/f5.jpg",
-    brandName: "Zudio",
-    title: "Floral Shirts",
-    price: 49,
-  },
-  {
-    image: "img/products/f6.jpg",
-    brandName: "HRX",
-    title: "Formal Shirts",
-    price: 81,
-  },
-  {
-    image: "img/products/f7.jpg",
-    brandName: "Puma",
-    title: "Floral Pajama",
-    price: 99,
-  },
-  {
-    image: "img/products/f8.jpg",
-    brandName: "Tommy Hilfiger",
-    title: "Retro Top",
-    price: 110,
-  },
-];
+
+// const featuredProductsList = [
+//   {
+//     image: "img/products/f1.jpg",
+//     brandName: "adidas",
+//     title: "Cartoon Astronaut T-Shirt",
+//     price: 78,
+//   },
+//   {
+//     image: "img/products/f2.jpg",
+//     brandName: "US Polo",
+//     title: "Checked Shirt",
+//     price: 31,
+//   },
+//   {
+//     image: "img/products/f3.jpg",
+//     brandName: "Gucci",
+//     title: "Polo T-Shirts",
+//     price: 20,
+//   },
+//   {
+//     image: "img/products/f4.jpg",
+//     brandName: "H&M",
+//     title: "Cartoon T-Shirts",
+//     price: 33,
+//   },
+//   {
+//     image: "img/products/f5.jpg",
+//     brandName: "Zudio",
+//     title: "Floral Shirts",
+//     price: 49,
+//   },
+//   {
+//     image: "img/products/f6.jpg",
+//     brandName: "HRX",
+//     title: "Formal Shirts",
+//     price: 81,
+//   },
+//   {
+//     image: "img/products/f7.jpg",
+//     brandName: "Puma",
+//     title: "Floral Pajama",
+//     price: 99,
+//   },
+//   {
+//     image: "img/products/f8.jpg",
+//     brandName: "Tommy Hilfiger",
+//     title: "Retro Top",
+//     price: 110,
+//   },
+// ];
 const newArrivalProducts = [
   {
     image: "img/products/n1.jpg",
@@ -146,69 +118,24 @@ const Home = () => {
         {/* <!-- Hero Section end --> */}
       </div>
       <section id="feature" className="section-p1">
-        <FeatureBox />
+        <Services />
       </section>
       <section id="product1" className="section-p1">
         <h2>Feature Product</h2>
         <p>Summer Collection New Morden Design</p>
 
         <div className="product-container">
-          <FeatureProduct />
+          <FeaturedProduct />
         </div>
       </section>
       <RepairService />
       <NewArrivalProducts />
       <FashionDeals />
-      <NewsLetters />
+      <NewsLetter />
     </>
   );
 };
 export default Home;
-
-function FeatureBox() {
-  const servicesList = shoppingServices;
-  return (
-    <>
-      {servicesList.map((services) => (
-        <>
-          <div className="fe-box">
-            <img src={services.image} alt="" />
-            <h6>{services.name}</h6>
-          </div>
-        </>
-      ))}
-    </>
-  );
-}
-
-function FeatureProduct() {
-  const featuredProducts = featuredProductsList;
-  return (
-    <>
-      {featuredProducts.map((product) => (
-        <>
-          <div className="product">
-            <img src={product.image} alt="" />
-            <div className="description">
-              <span>{product.brandName}</span>
-              <h5>{product.title}</h5>
-              <div className="star">
-                <i className="fas fa-star"></i>
-                <i className="fas fa-star"></i>
-                <i className="fas fa-star"></i>
-                <i className="fas fa-star"></i>
-              </div>
-              <h4>${product.price}</h4>
-            </div>
-            <a href="#">
-              <i className="fa-solid fa-cart-shopping cart"></i>
-            </a>
-          </div>
-        </>
-      ))}
-    </>
-  );
-}
 
 function RepairService() {
   return (
@@ -303,29 +230,6 @@ function FashionDeals() {
         </div>
       </section>
       {/* <!-- Text Banner End --> */}
-    </>
-  );
-}
-
-function NewsLetters() {
-  return (
-    <>
-      {/* <!-- NewsLetters Start --> */}
-      <section id="newsletter" className="section-p1 section-m1">
-        <div className="newstext">
-          <h4>Sign Up For NewsLetters</h4>
-          <p>
-            Get E-mail updates about our latest shop and
-            <span>special offers.</span>
-          </p>
-        </div>
-
-        <div className="form">
-          <input type="text" placeholder="Your email address" />
-          <button className="normal">Sign Up</button>
-        </div>
-      </section>
-      {/* <!-- NewsLetters End --> */}
     </>
   );
 }
