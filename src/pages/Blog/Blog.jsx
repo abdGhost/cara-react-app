@@ -63,71 +63,8 @@ const Blog = () => {
             </div>
           </>
         ))}
-
-        {/* <div className="blog-box">
-          <div className="blog-img">
-            <img src="img/blog/b2.jpg" alt="" />
-          </div>
-
-          <div className="blog-details">
-            <h4>The Cotton-Jersey Zip-Up Hoodie</h4>
-            <p>
-              Kickstarter man braid godard coloring book. Reclette waistcoat
-              selfiles wolf chartreuse hexagon irony, godard.....
-            </p>
-            <a href="#">CONTINUE READING</a>
-          </div>
-          <h1>13/01</h1>
-        </div>
-
-        <div className="blog-box">
-          <div className="blog-img">
-            <img src="img/blog/b3.jpg" alt="" />
-          </div>
-
-          <div className="blog-details">
-            <h4>The Cotton-Jersey Zip-Up Hoodie</h4>
-            <p>
-              Kickstarter man braid godard coloring book. Reclette waistcoat
-              selfiles wolf chartreuse hexagon irony, godard.....
-            </p>
-            <a href="#">CONTINUE READING</a>
-          </div>
-          <h1>13/01</h1>
-        </div>
-
-        <div className="blog-box">
-          <div className="blog-img">
-            <img src="img/blog/b4.jpg" alt="" />
-          </div>
-
-          <div className="blog-details">
-            <h4>The Cotton-Jersey Zip-Up Hoodie</h4>
-            <p>
-              Kickstarter man braid godard coloring book. Reclette waistcoat
-              selfiles wolf chartreuse hexagon irony, godard.....
-            </p>
-            <a href="#">CONTINUE READING</a>
-          </div>
-          <h1>13/01</h1>
-        </div>
-
-        <div className="blog-box">
-          <div className="blog-img">
-            <img src="img/blog/b6.jpg" alt="" />
-          </div>
-
-          <div className="blog-details">
-            <h4>The Cotton-Jersey Zip-Up Hoodie</h4>
-            <p>
-              Kickstarter man braid godard coloring book. Reclette waistcoat
-              selfiles wolf chartreuse hexagon irony, godard.....
-            </p>
-            <a href="#">CONTINUE READING</a>
-          </div>
-          <h1>13/01</h1>
-        </div> */}
       </section>{" "}
+      
       <section id="pagination" className="section-p1">
         <a href="#">1</a>
         <a href="#">2</a>
