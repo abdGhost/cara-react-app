@@ -1,3 +1,5 @@
+import NewsLetter from "../../components/NewsLetter";
+
 const Contact = () => {
   return (
     <div>
@@ -109,6 +111,7 @@ const Contact = () => {
         </div>
       </section>
       {/* <!-- Contact Form End --> */}
+      <NewsLetter />
     </div>
   );
 };
